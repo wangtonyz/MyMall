@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>mall</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>名字</td>
+            <td>价格</td>
+        </tr>
+        <tr th:each="product:${products}">
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+        </tr>
+    </table>
+</body>
+</html>
